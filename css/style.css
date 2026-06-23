@@ -8,11 +8,14 @@
 :root {
   --bg-primary: #0a1628;
   --bg-secondary: #0c1a30;
-  --bg-footer: #060e18;
+  --bg-footer: #0a1628;
   --accent: #c9a96e;
   --text-primary: #ffffff;
   --text-secondary: #8899aa;
   --text-muted: #667788;
+  --text-light: #cccccc;
+  --text-dim: #556677;
+  --text-faint: #445566;
   --border-subtle: rgba(255, 255, 255, 0.06);
   --border-accent: rgba(201, 169, 110, 0.15);
   --font-family: -apple-system, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", sans-serif;
@@ -217,7 +220,7 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: linear-gradient(160deg, #0a1628 0%, #0d1f3c 40%, #152040 100%);
+  background: linear-gradient(160deg, #0a1628 0%, #0c1a30 50%, #0a1628 100%);
   position: relative;
   overflow: hidden;
   padding-top: 64px;
@@ -366,14 +369,14 @@ section {
 }
 
 .course-note {
-  color: #556677;
+  color: var(--text-dim);
   font-size: 14px;
   margin: 8px 0 32px;
 }
 
 .course-features {
   list-style: none;
-  color: #cccccc;
+  color: var(--text-light);
   font-size: 15px;
   line-height: 2.4;
   margin-bottom: 32px;
@@ -469,13 +472,13 @@ section {
 }
 
 .review-text {
-  color: #cccccc;
+  color: var(--text-light);
   font-size: 14px;
   line-height: 1.8;
 }
 
 .review-author {
-  color: #556677;
+  color: var(--text-dim);
   font-size: 13px;
   margin-top: 14px;
 }
@@ -528,7 +531,7 @@ section {
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #445566;
+  color: var(--text-faint);
 }
 
 .form-group select {
@@ -596,7 +599,7 @@ footer {
 .footer-col p,
 .footer-col a {
   display: block;
-  color: #556677;
+  color: var(--text-dim);
   font-size: 13px;
   line-height: 2.2;
   text-decoration: none;
@@ -610,7 +613,7 @@ footer {
   max-width: var(--max-width);
   margin: 0 auto;
   text-align: center;
-  color: #445566;
+  color: var(--text-faint);
   font-size: 12px;
   padding-top: 24px;
   margin-top: 36px;
