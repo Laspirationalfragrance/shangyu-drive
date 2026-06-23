@@ -1,0 +1,119 @@
+<h2>首页布局 — 你更喜欢哪种？</h2>
+<p class="subtitle">大气高端风（深色 + 金色），三种不同信息架构</p>
+
+<div class="options" data-multiselect>
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>经典单页滚动</h3>
+      <p>从上到下依次展示：首屏大图 → 驾校优势 → 课程价格 → 教练团队 → 学员评价 → 报名表单 → 页脚联系方式。一目了然，适合手机浏览。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>多页面传统结构</h3>
+      <p>顶部导航栏 + 独立页面（首页 / 关于我们 / 课程 / 教练 / 学员评价 / 联系我们）。每个页面内容聚焦，SEO 友好。</p>
+    </div>
+  </div>
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>单页 + 锚点导航</h3>
+      <p>所有内容在一个页面，但顶部有固定导航栏，点击平滑滚动到对应区块。兼具单页的流畅感和多页的结构感。</p>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 40px;">预览 — 方案 A（经典单页滚动）首屏</h3>
+<div class="mockup">
+  <div class="mockup-header">上虞市驾校 — 首页首屏</div>
+  <div class="mockup-body" style="background: #1a1a2e; color: #fff; padding: 0;">
+    <div style="text-align: center; padding: 80px 40px; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); position: relative; overflow: hidden;">
+      <div style="position: absolute; inset: 0; opacity: 0.08; background: radial-gradient(circle at 30% 50%, #d4a574 0%, transparent 60%);"></div>
+      <div style="position: relative; z-index: 1;">
+        <div style="border: 2px solid #d4a574; display: inline-block; padding: 8px 24px; margin-bottom: 24px;">
+          <span style="color: #d4a574; font-size: 14px; letter-spacing: 6px; text-transform: uppercase;">上虞市驾校</span>
+        </div>
+        <h1 style="font-size: 52px; font-weight: 700; margin: 0 0 16px; color: #fff;">学车，从这里开始</h1>
+        <p style="font-size: 20px; color: #b0b0c0; max-width: 600px; margin: 0 auto 40px;">通过率领先 · 价格透明 · 教练耐心 · 快速拿证</p>
+        <div style="display: flex; gap: 16px; justify-content: center;">
+          <button class="mock-button" style="background: #d4a574; color: #1a1a2e; border: none; padding: 14px 36px; font-size: 16px; border-radius: 4px; cursor: pointer;">立即报名</button>
+          <button class="mock-button" style="background: transparent; color: #d4a574; border: 2px solid #d4a574; padding: 14px 36px; font-size: 16px; border-radius: 4px; cursor: pointer;">了解课程</button>
+        </div>
+      </div>
+    </div>
+    <!-- 优势条 -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; background: #0f0f23; border-top: 1px solid rgba(212,167,116,0.3);">
+      <div style="text-align: center; padding: 32px 16px; border-right: 1px solid rgba(255,255,255,0.05);">
+        <div style="font-size: 28px; margin-bottom: 8px;">🎯</div>
+        <div style="color: #d4a574; font-weight: 700; font-size: 18px;">98%</div>
+        <div style="color: #888; font-size: 14px; margin-top: 4px;">考试通过率</div>
+      </div>
+      <div style="text-align: center; padding: 32px 16px; border-right: 1px solid rgba(255,255,255,0.05);">
+        <div style="font-size: 28px; margin-bottom: 8px;">💰</div>
+        <div style="color: #d4a574; font-weight: 700; font-size: 18px;">透明收费</div>
+        <div style="color: #888; font-size: 14px; margin-top: 4px;">无隐形消费</div>
+      </div>
+      <div style="text-align: center; padding: 32px 16px; border-right: 1px solid rgba(255,255,255,0.05);">
+        <div style="font-size: 28px; margin-bottom: 8px;">👨‍🏫</div>
+        <div style="color: #d4a574; font-weight: 700; font-size: 18px;">耐心教学</div>
+        <div style="color: #888; font-size: 14px; margin-top: 4px;">资深教练团队</div>
+      </div>
+      <div style="text-align: center; padding: 32px 16px;">
+        <div style="font-size: 28px; margin-bottom: 8px;">⏱️</div>
+        <div style="color: #d4a574; font-weight: 700; font-size: 18px;">45天</div>
+        <div style="color: #888; font-size: 14px; margin-top: 4px;">最快拿证</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 40px;">预览 — 方案 B（多页面）导航结构</h3>
+<div class="mockup">
+  <div class="mockup-header">导航栏 + 子页面结构</div>
+  <div class="mockup-body" style="background: #1a1a2e; padding: 0;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: #0f0f23; border-bottom: 1px solid rgba(212,167,116,0.2);">
+      <span style="color: #d4a574; font-weight: 700; font-size: 18px;">上虞市驾校</span>
+      <div style="display: flex; gap: 32px;">
+        <span style="color: #d4a574; font-size: 14px;">首页</span>
+        <span style="color: #aaa; font-size: 14px;">关于我们</span>
+        <span style="color: #aaa; font-size: 14px;">课程价格</span>
+        <span style="color: #aaa; font-size: 14px;">教练团队</span>
+        <span style="color: #aaa; font-size: 14px;">学员评价</span>
+        <span style="color: #aaa; font-size: 14px;">联系我们</span>
+      </div>
+      <button class="mock-button" style="background: #d4a574; color: #1a1a2e; border: none; padding: 8px 20px; border-radius: 4px; font-size: 13px;">在线报名</button>
+    </div>
+    <div style="padding: 80px 40px; text-align: center;">
+      <p style="color: #666;">子页面内容区域 — 每页独立，点击导航切换</p>
+    </div>
+  </div>
+</div>
+
+<h3 style="margin-top: 40px;">预览 — 方案 C（单页 + 锚点）导航行为</h3>
+<div class="mockup">
+  <div class="mockup-header">点击导航 → 平滑滚动到对应区块</div>
+  <div class="mockup-body" style="background: #1a1a2e; padding: 0;">
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 40px; background: #0f0f23; border-bottom: 1px solid rgba(212,167,116,0.2); position: sticky; top: 0;">
+      <span style="color: #d4a574; font-weight: 700; font-size: 18px;">上虞市驾校</span>
+      <div style="display: flex; gap: 32px;">
+        <span style="color: #d4a574; font-size: 14px;">首屏</span>
+        <span style="color: #aaa; font-size: 14px;">优势</span>
+        <span style="color: #aaa; font-size: 14px;">课程</span>
+        <span style="color: #aaa; font-size: 14px;">教练</span>
+        <span style="color: #aaa; font-size: 14px;">评价</span>
+        <span style="color: #aaa; font-size: 14px;">报名</span>
+      </div>
+      <button class="mock-button" style="background: #d4a574; color: #1a1a2e; border: none; padding: 8px 20px; border-radius: 4px; font-size: 13px;">在线报名</button>
+    </div>
+    <div style="padding: 60px 40px; text-align: center;">
+      <div class="placeholder" style="margin-bottom: 16px;">⬆️ 首屏大图区块</div>
+      <div class="placeholder" style="margin-bottom: 16px;">⬆️ 驾校优势区块</div>
+      <div class="placeholder" style="margin-bottom: 16px;">⬆️ 课程价格区块</div>
+      <div class="placeholder" style="margin-bottom: 16px;">⬆️ 教练团队区块</div>
+      <div class="placeholder" style="margin-bottom: 16px;">⬆️ 学员评价区块</div>
+      <div class="placeholder">⬆️ 报名表单区块</div>
+    </div>
+  </div>
+</div>
