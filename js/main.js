@@ -29,8 +29,9 @@
   var navLinks = document.querySelector('.nav-links');
 
   hamburger.addEventListener('click', function () {
-    hamburger.classList.toggle('active');
+    var isOpen = hamburger.classList.toggle('active');
     navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', isOpen);
   });
 
   // Close menu when a link is clicked
@@ -82,7 +83,7 @@
     form.style.display = 'none';
     success.style.display = 'block';
 
-    // Log data for debugging
-    console.log('报名数据：', data);
+    // Debug log (phone masked for privacy)
+    console.log('报名成功：', data.name, data.phone.replace(/(\d{3})\d{4}(\d{4})/, '$1****$2'), data.course);
   });
 })();
